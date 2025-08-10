@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: "Righteous", cursive;
+  background-color: white;
+}
+
+/* Help Container */
+.help-container {
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.help-container h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.help-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  border: 1px solid #eee;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-row img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-row span,
+.contact-row p {
+  font-size: 18px;
+  text-align: left;
+}

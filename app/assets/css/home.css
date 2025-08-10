@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", cursive;
+  background-color: white;
+}
+
+/* Main Content */
+main {
+  text-align: center;
+  padding: 100px 20px 40px; /* Tambah jarak dari atas dan bawah */
+}
+
+main h1 {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+}
+
+.role-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px; /* Tambah jarak antar box */
+}
+
+.role-box {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.role-box:hover {
+  transform: translateY(-5px);
+}
+
+.role-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 20px;
+}
+
+.img-placeholder {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: #ccc;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+@keyframes bounceUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+}
+
+.role-image {
+  animation: bounceUpDown 3s ease-in-out infinite;
+  width: 70%;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #a042f4;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5722d1;
+}

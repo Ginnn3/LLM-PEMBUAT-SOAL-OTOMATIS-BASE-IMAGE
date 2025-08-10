@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Righteous", fantasy;
+  background-color: white;
+}
+
+.container {
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+.choices label {
+  display: block;
+  background: #eee;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.choices input[type="radio"] {
+  display: none;
+}
+
+.choices input[type="radio"]:checked + label {
+  background-color: #d1b3ff;
+  border-color: #a042f4;
+  color: #000;
+}
+
+.choices label::before {
+  content: "\f10c";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+  color: #999;
+}
+
+.choices input[type="radio"]:checked + label::before {
+  content: "\f058";
+  color: #a042f4;
+}
+
+.btn-question {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #a042f4;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-question:hover {
+  background-color: #5722d1;
+}
+
+/* Question Medium Input Button */
+/* Input field for fill-in-the-blank answers */
+.input-answer {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px 0;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Righteous", fantasy;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-answer:focus {
+  outline: none;
+  border-color: #a042f4;
+  background-color: #f3eaff;
+}

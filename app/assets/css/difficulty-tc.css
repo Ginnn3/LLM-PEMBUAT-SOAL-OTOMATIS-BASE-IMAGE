@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: "Righteous", cursive;
+  background-color: white;
+}
+
+/* Main Container */
+.container {
+  text-align: left;
+  margin: 100px auto 50px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+#animatedText {
+  min-width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+  min-height: 30px;
+  margin-bottom: 20px;
+}
+
+#p1,
+#p2,
+#p3 {
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: 100;
+  min-height: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  margin: 1px;
+  font-weight: 600;
+}
+
+.difficulty-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.difficulty-buttons a {
+  display: inline-block;
+  text-align: center;
+  background-color: #a042f4;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background 0.3s;
+  width: 200px;
+  height: 40px;
+}
+
+.difficulty-buttons a:hover {
+  background-color: #5722d1;
+  transform: translateY(-5px);
+}
+
+.easy {
+  margin-left: -300px;
+  margin-top: 10px;
+}
+
+.medium {
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.hard {
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .difficulty-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .easy,
+  .medium,
+  .hard {
+    margin-left: 0 !important;
+    margin-top: 10px;
+    width: 80%;
+  }
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Righteous", cursive;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #a18cd1, #5722d1);
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+header h1 {
+  color: white;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: 2px underline;
+}
+
+header img {
+  max-width: 80px;
+  display: inline-block;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 73.7vh;
+  padding: 0 20px;
+  margin-top: 100px;
+}
+
+#animatedText {
+  min-width: 300px;
+  font-size: 3rem;
+  font-weight: bold;
+  min-height: 30px;
+  margin-bottom: 20px;
+}
+
+#p1 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  min-height: 20px;
+  margin-bottom: 30px;
+}
+/* .hero h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    color: #fefefe;
+    margin-bottom: 30px;
+  } */
+
+.hero button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #5722d1;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  background-color: #5722d1;
+  color: #fff;
+}
+
+section {
+  padding: 80px 40px;
+  text-align: center;
+  color: white;
+}
+
+#about,
+#help {
+  min-height: 80vh;
+}
+
+footer {
+  background-color: #5722d1;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+
+/* Hide nav links on mobile by default */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1100; /* higher than nav */
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #5722d1;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
